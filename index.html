@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For ummama ✨</title>
+    <meta
+      name="description"
+      content="A dreamy, pink aesthetic website for ummama with memories, playlist, favorite things, and social links."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="floating-hearts" aria-hidden="true">
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+    </div>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">ummama<span>Love</span></div>
+        <nav class="nav">
+          <a href="#message">Message</a>
+          <a href="#gallery">Memories</a>
+          <a href="#music">Playlist</a>
+          <a href="#social">Social</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section-shell">
+          <div class="hero-copy">
+            <p class="eyebrow">For my favorite person</p>
+            <h1 id="heroTitle">Welcome, ummama ✨</h1>
+            <p id="heroMessage" class="lead"></p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#message">Open This 💌</a>
+              <a class="btn secondary" href="#gallery">See memories</a>
+            </div>
+            <div class="hero-meta">
+              <div class="meta-chip birth-chip">
+                <span class="digit">5 June</span>
+                <small>Her birthday</small>
+              </div>
+              <div class="meta-chip">
+                <span class="digit" id="daysLeft">0</span>
+                <small>Days till birthday</small>
+              </div>
+              <div class="meta-chip">
+                <span class="digit">∞</span>
+                <small>Love notes</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="photo-card">
+              <img id="profileImage" src="" alt="ummama" />
+              <div class="card-badge">my favorite human</div>
+              <div id="favoritesPreview" class="favorites-preview"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="message" class="section-shell message-section">
+          <div class="section-heading">
+            <p class="eyebrow">A little note</p>
+            <h2>Sweet words for you 🌷</h2>
+          </div>
+          <div class="letter-card">
+            <div class="stamp">✨</div>
+            <p id="personalMessage"></p>
+          </div>
+        </section>
+
+        <section id="gallery" class="section-shell gallery-section">
+          <div class="section-header-row">
+            <div>
+              <p class="eyebrow">Snapshots</p>
+              <h2>Little Memories 🌷</h2>
+            </div>
+          </div>
+          <div id="galleryGrid" class="gallery-grid"></div>
+        </section>
+
+        <section id="music" class="section-shell music-section">
+          <div class="section-header-row">
+            <div>
+              <p class="eyebrow">Playlist</p>
+              <h2>Her Playlist 🎧</h2>
+            </div>
+          </div>
+          <div id="musicGrid" class="music-grid"></div>
+        </section>
+
+        <section id="favorites" class="section-shell favorites-section">
+          <div class="section-heading">
+            <p class="eyebrow">Favorite things</p>
+            <h2>Things she loves 💖</h2>
+          </div>
+          <div id="favoritesList" class="favorite-tags"></div>
+        </section>
+
+        <section id="social" class="section-shell social-section">
+          <div class="section-header-row">
+            <div>
+              <p class="eyebrow">Connect</p>
+              <h2>Find Me Here 🌐</h2>
+            </div>
+          </div>
+          <div id="socialGrid" class="social-grid"></div>
+        </section>
+
+        <section class="section-shell countdown-section">
+          <div class="section-heading">
+            <p class="eyebrow">Countdown</p>
+            <h2>For our little forever 🌙</h2>
+          </div>
+          <div class="countdown-boxes">
+            <div class="countdown-item"><span id="countdownDays">00</span><small>Days</small></div>
+            <div class="countdown-item"><span id="countdownHours">00</span><small>Hours</small></div>
+            <div class="countdown-item"><span id="countdownMinutes">00</span><small>Minutes</small></div>
+            <div class="countdown-item"><span id="countdownSeconds">00</span><small>Seconds</small></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">Made with care, specially for ummama ✨</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
